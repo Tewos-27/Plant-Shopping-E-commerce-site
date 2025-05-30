@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export const CartSlice = createSlice({
+  // Define the name of the slice
+  // This name is used to generate action types and the reducer name
   name: 'cart',
   initialState: {
     items: [], // Initialize items as an empty array
