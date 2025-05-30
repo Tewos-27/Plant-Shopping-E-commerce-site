@@ -7,6 +7,9 @@ export const CartSlice = createSlice({
   initialState: {
     items: [], // Initialize items as an empty array
   },
+  // Define the reducers for the slice
+  // Each reducer function will handle a specific action
+  // and update the state accordingly
   reducers: {
     addItem: (state, action) => {
       const { name, image, cost } = action.payload;
