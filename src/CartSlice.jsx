@@ -11,6 +11,8 @@ export const CartSlice = createSlice({
   // Each reducer function will handle a specific action
   // and update the state accordingly
   reducers: {
+    // Action to add an item to the cart
+    // If the item already exists, increment its quantity
     addItem: (state, action) => {
       const { name, image, cost } = action.payload;
       const existingItem = state.items.find(item => item.name === name);
