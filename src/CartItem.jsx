@@ -9,8 +9,7 @@ const CartItem = ({ onContinueShopping }) => {
   // This component displays the items in the shopping cart
   const cart = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
- 
-
+  // The cart is retrieved from the Redux store using useSelector
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
     return cart.reduce((total, item) => {
