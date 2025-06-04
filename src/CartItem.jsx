@@ -6,7 +6,7 @@ import './CartItem.css';
 
 
 const CartItem = ({ onContinueShopping }) => {
-  
+  // This component displays the items in the shopping cart
   const cart = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
  
